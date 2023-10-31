@@ -1,0 +1,10 @@
+<div class="w-4/5">
+    <h1>Búsqueda por País</h1>
+    
+    <shared-search-box (onDebounce)="searchByCountry($event)"
+                        [initialValue]="initialValue"
+    ></shared-search-box>
+
+    <country-table [countries]="countries" ></country-table>
+    
+</div>

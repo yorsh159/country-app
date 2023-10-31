@@ -1,0 +1,12 @@
+<div class="w-4/5">
+    <h1>Búsqueda por Capital</h1>
+    
+    <!-- (onValue)="searchByCapital($event)" -->
+    <shared-search-box (onDebounce)="searchByCapital($event)"
+                        [initialValue]="initialValue"
+    ></shared-search-box>
+
+    <shared-loadin-spinner *ngIf="isLoading"></shared-loadin-spinner>
+    <country-table [countries]="countries"></country-table>
+    
+</div>

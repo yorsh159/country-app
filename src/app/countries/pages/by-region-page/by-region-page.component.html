@@ -1,0 +1,16 @@
+<div class="w-4/5">
+    <h1>Búsqueda por Región</h1>
+    
+    <!-- <shared-search-box (onDebounce)="searchByRegion($event)"
+    ></shared-search-box> -->
+
+    <button *ngFor="let region of region" 
+            class="p-2 mr-3 bg-blue-400 text-white font-semibold rounded-md"
+            [ngClass]="{'bg-red-500': regionActive === region }"
+            (click)="searchByRegion(region)">
+    {{region}}
+    </button>
+
+    <country-table [countries]="countries" ></country-table>
+    
+</div>

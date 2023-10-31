@@ -1,0 +1,11 @@
+<!-- (keyup.enter)="searchCapital(txtSearchInput.value)" -->
+
+<div>
+    <input  
+            (keyup)="onKeyPress(txtSearchInput.value)"
+            #txtSearchInput
+            type="text" name="search-box" id="search-box" 
+            class="p-2 rounded-md border border-sky-300 w-1/2"
+            [value]="initialValue" 
+            [placeholder]="placeholder">
+</div>
